@@ -97,8 +97,9 @@ a.secundaria {
   text-align: center;
 }
 
+/*HOVER */
 h3.descuento:hover {
-  color: #000;
+  background-color: grey;
 }
 
 /* SLIDER */
@@ -153,7 +154,8 @@ h3.descuento:hover {
 .parrafo {
   text-align: center;
   margin-top: 100px;
-  font-family: "Montserrat", sans-serif, "Arial";
+  font-family: "Montserrat", sans-serif;
+  color: grey;
   font-size: 40px;
 }
 
@@ -381,6 +383,73 @@ div#kits {
   font-family: "Rubik", sans-serif;
 }
 
+/*TRANSFERENCIAS*/
+.transferencias {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1, 5rem;
+  color: grey;
+  text-align: center;
+  position: relative;
+  margin-top: -200px;
+  margin-bottom: 75px;
+}
+
+/*BOTON GALICIA (MODIFICADO DE BOOSTRAP)*/
+.modal-content2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.modal-title2 {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.modal-header2 {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+
+/*BOTONES BANCO */
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.botones .BancoUno {
+  background-color: red;
+  border: red;
+}
+.botones .BancoUno:hover {
+  background-color: #9dacb1;
+  font-style: italic;
+}
+.botones .BancoDos {
+  background-color: orange;
+  text-align: center;
+  border: #e76e0a;
+}
+.botones .BancoDos:hover {
+  background-color: #9dacb1;
+  font-style: italic;
+}
+
 /* CONTACTANOS POR WHATSAPP */
 section h2 .whatsapp {
   display: flex;
@@ -397,7 +466,15 @@ section h2 .whatsapp {
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  top: 600px;
+  margin-top: 100px;
+}
+
+.logotipoWhatsapp {
+  width: 2%;
+  height: auto;
+  position: relative;
+  margin-left: 230px;
+  margin-top: -110px;
 }
 
 .lema {
@@ -408,7 +485,23 @@ section h2 .whatsapp {
   font-style: italic;
   font-size: 35px;
   text-align: center;
-  margin-top: -150px;
+  margin-top: -210px;
+}
+
+/*ACCORDEON */
+.acordion-i {
+  position: relative;
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: grey;
+}
+
+.textAccordion {
+  position: relative;
+  margin-top: 50px;
+  text-decoration: underline;
+  font-family: "Montserrat", sans-serif;
+  color: grey;
 }
 
 /* MAPA */
@@ -417,15 +510,16 @@ section h2 .whatsapp {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 35px;
   position: relative;
-  margin-left: 53%;
-  top: 150px;
+  margin-left: 25px;
+  top: 70px;
 }
 
 section div.mapa {
   display: block;
   border: solid;
-  top: -280px;
+  top: -200px;
   position: relative;
+  overflow: hidden;
 }
 
 .especificacionUbicacion {
@@ -433,10 +527,10 @@ section div.mapa {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
   font-style: italic;
-  font-size: 25px;
+  font-size: 20px;
   position: relative;
-  margin-left: 47%;
-  top: 150px;
+  margin-left: 650px;
+  top: 180px;
   line-height: 50px;
 }
 

@@ -1,86 +1,129 @@
-html {
-  font-size: 20px;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
+  width: 100%;
+  max-width: 1320px;
+  min-width: 1320px;
   margin: 0 auto;
-  width: 1320px;
 }
 
-header {
+.header {
   position: sticky;
-  top: 0px;
-  right: 0px;
   z-index: 50;
+  background-color: white;
+  width: 100%;
+  height: 170px;
+  top: 0;
+  left: 0;
 }
 
-/* ESTILO BARRA NAVEGACION */
-.ojo {
-  width: 40%;
-  height: 15%;
-  margin-left: 100px;
+/* ESTILO BARRA NAVEGACION / LOGOTIPO */
+.logo-barra {
+  margin-top: -20px;
+  margin-left: 30px;
+  width: 25%;
+  height: 25%;
 }
 
-a.principal {
-  color: #00008B !important;
+h1.texto-barra {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 2em;
+  margin-top: -20px;
+  margin-left: 30px;
+  padding-bottom: 5px;
+  color: black;
 }
 
-a.secundaria {
+h2.subtexto-barra {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 0.75em;
+  margin-top: -20px;
+  margin-left: 30px;
+  color: black;
+}
+
+.nav-menu-item {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 15px;
   display: flex;
-  justify-content: space-evenly;
-  font-family: "Montserrat", sans-serif !important;
-  color: grey;
+  text-transform: uppercase;
+  justify-content: space-between;
 }
 
-#menu {
-  margin: 10%;
-  padding: 5%;
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 10px;
 }
 
-.botonInicio {
-  color: yellow;
-  text-decoration: none;
-  font-family: "Dosis", sans-serif;
-  font-family: "Noto Sans", sans-serif;
-  font-family: "PT Sans", sans-serif;
-  font-family: "Rubik", sans-serif;
+.nav-menu-link:hover {
+  background-color: gold;
+  transition: 1s;
 }
 
-.textoMenu {
-  justify-content: center;
-  justify-content: space-around;
-  margin: 0 auto;
+.nav-menu-link_active {
+  color: gold !important;
 }
 
-/* ESTILO LOGOTIPO PRINCIPAL */
-.logotipo {
-  float: inline-start;
-  width: 15%;
-  height: auto;
-  position: relative;
-}
+@media (max-width: 992px) {
+  .header {
+    margin-bottom: 60px;
+  }
 
-.textoLogotipo {
-  font-family: "Hammersmith One", sans-serif;
-  font-size: 45px;
-}
+  .nav-menu-link:hover {
+    color: gold;
+    transition: 1s;
+  }
 
-.subtextoLogotipo {
-  font-family: "Hammersmith One", sans-serif;
-  font-size: 16px;
-}
+  .logo-barra {
+    width: 15%;
+    height: 15%;
+  }
 
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    background-color: white !important;
+  }
+
+  h1.texto-barra {
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 2em;
+    margin-top: -20px;
+    margin-left: 30px;
+    padding-bottom: 5px;
+    color: black;
+  }
+
+  h2.subtexto-barra {
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 1em;
+    margin-top: -20px;
+    margin-left: 30px;
+    color: black;
+  }
+}
 /* ESTILO ESLOGAN Y PROMOCION */
 .eslogan {
   display: inline-block;
   text-align: center;
+  padding: 5px;
   margin: 0 auto;
   background-color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
-  color: yellow;
-  font-size: 27px;
+  color: gold;
+  font-size: 1.68em;
   width: 100%;
+}
+
+.eslogan:hover {
+  color: white;
+  transition: 1, 5s;
 }
 
 .descuento {
@@ -89,7 +132,7 @@ a.secundaria {
   flex-direction: row;
   flex-wrap: wrap;
   color: black;
-  font-size: 35px;
+  font-size: 2.18em;
   position: relative;
   top: 30px;
   justify-content: center;
@@ -156,13 +199,12 @@ h3.descuento:hover {
   margin-top: 100px;
   font-family: "Montserrat", sans-serif;
   color: grey;
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
 .empresas {
   display: flex;
   justify-content: center;
-  /* margin-top:-800px; */
 }
 
 /* ICONOS NUESTROS PARTE SECUNDARIA */
@@ -241,38 +283,21 @@ h3.descuento:hover {
   text-align: left;
   margin-top: 60px;
   font-family: "Montserrat", sans-serif, "Arial";
-  font-size: 25px;
+  font-size: 1.56em;
   line-height: 55px;
 }
 
 /* PRODUCTOS */
-div#productos {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  grid-gap: 70px;
-  position: relative;
-  top: 50px;
-}
-
-#camaras img {
-  margin: 0 15px;
-}
-
-#alarmas img {
-  margin: 0 20px;
-}
-
-#cerco {
-  margin: 0 40px;
+#reduction {
+  width: 20% !important;
+  height: 10%;
 }
 
 /* TITULO PRODUCTOS */
 h1.tituloProductos {
-  font-family: "Montserrat", sans-serif, "Arial";
+  font-family: "Montserrat", sans-serif;
   font-style: oblique;
-  font-size: 50px;
+  font-size: 3.12em;
   line-height: 55px;
   text-decoration: black;
   margin-top: 100px;
@@ -281,23 +306,13 @@ h1.tituloProductos {
 }
 
 /*NUESTROS KITS*/
-div#kits {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  grid-gap: 70px;
-  position: relative;
-  top: 50px;
-}
-
 /* FORMULARIO DE CONTACTO */
 .formulario {
   border: solid 5px;
   color: blue;
   border-radius: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: medium;
+  font-size: 1.5em;
   position: relative;
   top: 65px;
   overflow: hidden;
@@ -386,42 +401,12 @@ div#kits {
 /*TRANSFERENCIAS*/
 .transferencias {
   font-family: "Montserrat", sans-serif;
-  font-size: 1, 5rem;
+  font-size: 1.5em;
   color: grey;
   text-align: center;
   position: relative;
   margin-top: -200px;
   margin-bottom: 75px;
-}
-
-/*BOTON GALICIA (MODIFICADO DE BOOSTRAP)*/
-.modal-content2 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  pointer-events: auto;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
-  outline: 0;
-}
-
-.modal-title2 {
-  margin-bottom: 0;
-  line-height: 1.5;
-}
-
-.modal-header2 {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
-  border-top-left-radius: calc(0.3rem - 1px);
-  border-top-right-radius: calc(0.3rem - 1px);
 }
 
 /*BOTONES BANCO */
@@ -462,19 +447,11 @@ section h2 .whatsapp {
   font-weight: bold;
   color: white;
   background-color: limegreen;
-  font-size: 40px;
+  font-size: 1.3em;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
   margin-top: 100px;
-}
-
-.logotipoWhatsapp {
-  width: 2%;
-  height: auto;
-  position: relative;
-  margin-left: 230px;
-  margin-top: -110px;
 }
 
 .lema {
@@ -483,7 +460,7 @@ section h2 .whatsapp {
   justify-content: center;
   font-family: "Benne", serif;
   font-style: italic;
-  font-size: 35px;
+  font-size: 2.18em;
   text-align: center;
   margin-top: -210px;
 }
@@ -508,7 +485,7 @@ section h2 .whatsapp {
 .ubicacion {
   display: block;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 35px;
+  font-size: 2.18em;
   position: relative;
   margin-left: 25px;
   top: 70px;
@@ -527,7 +504,7 @@ section div.mapa {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
   font-style: italic;
-  font-size: 20px;
+  font-size: 1.25em;
   position: relative;
   margin-left: 650px;
   top: 180px;
@@ -573,7 +550,7 @@ section div.mapa {
   padding-top: 5px;
   margin: 0px;
   line-height: 16px;
-  font-size: 11px;
+  font-size: 0.6em;
 }
 
 .sticky li p a {
@@ -587,7 +564,7 @@ section div.mapa {
 
 /* PIE DE PAGINA  */
 #scroll-top {
-  background-color: #1f9595;
+  background-color: gold;
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -618,9 +595,9 @@ section div.mapa {
 .direccion {
   display: inline-block;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: large;
+  font-size: 1.2em;
   position: relative;
-  left: 720px;
+  left: 680px;
   top: 300px;
   text-align: center;
 }
@@ -628,7 +605,7 @@ section div.mapa {
 .horario {
   display: flex;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: x-large;
+  font-size: 2.3em;
   position: relative;
   left: 50px;
   top: -50px;
@@ -642,7 +619,7 @@ section div.mapa {
 .copyright {
   display: flex;
   font-family: "Noto Sans", sans-serif;
-  font-size: large;
+  font-size: 1em;
   justify-content: center;
   margin-top: -32px;
   color: white;

@@ -1,192 +1,180 @@
 @import "base/colores";
 @import "base/fuentes";
 
-
-
-
-
 * {
-  margin:0;
+  margin: 0;
   box-sizing: border-box;
 }
-  
-body{
-  width:100%;
-  max-width: 1320px;
-  min-width: 1320px;
-  margin:0 auto;
-}
- 
-.header {
-    position: sticky;
-    z-index: 50;
-    background-color: $blanco;
-    width: 100%;
-    height: 170px;
-    top:0;
-    left:0;
-  }
-  
-  /* ESTILO BARRA NAVEGACION / LOGOTIPO */
 
+body {
+  width: 1320px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  z-index: 50;
+  background-color: $blanco;
+  width: 100%;
+  height: 170px;
+  top: 0;
+  left: 0;
+}
+
+/* ESTILO BARRA NAVEGACION / LOGOTIPO */
 
 .logo-barra {
   margin-top: -20px;
-  margin-left:30px;
+  margin-left: 30px;
   width: 25%;
   height: 25%;
 }
-  
+
 h1.texto-barra {
   font-family: "Hammersmith One", sans-serif;
   font-size: 2em;
-  margin-top:-20px;
+  margin-top: -20px;
   margin-left: 30px;
   padding-bottom: 5px;
-  color:$negro;
+  color: $negro;
 }
 
 h2.subtexto-barra {
   font-family: "Hammersmith One", sans-serif;
   font-size: 0.75em;
-  margin-top:-20px;
+  margin-top: -20px;
   margin-left: 30px;
-  color:$negro;
+  color: $negro;
 }
 
 .nav-menu-item {
   font-size: 1.2em;
   font-weight: bold;
-  margin:0 15px;
+  margin: 0 15px;
   display: flex;
   text-transform: uppercase;
   justify-content: space-between;
-  }
-  .nav-menu-link {
-    padding: 8px 12px;
-    border-radius: 10px;
-  }
-  .nav-menu-link:hover {
-    background-color: gold ;
-    transition: 1s;
-  }
-  
-  .nav-menu-link_active {
-    color:gold !important;
-  }
-
-
-@media (max-width:992px) {
-
-.header {
-  margin-bottom: 60px;
+}
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 10px;
 }
 .nav-menu-link:hover {
-  color: gold;
+  background-color: gold;
   transition: 1s;
 }
-.logo-barra {
-  width: 15%;
-  height:15%;
-}
-.navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: 1;
-  align-items: center;
-  background-color: white !important;
-}
-h1.texto-barra {
-  font-family: "Hammersmith One", sans-serif;
-  font-size: 2em;
-  margin-top:-20px;
-  margin-left: 30px;
-  padding-bottom: 5px;
-  color:$negro;
+
+.nav-menu-link_active {
+  color: gold !important;
 }
 
-h2.subtexto-barra {
-  font-family: "Hammersmith One", sans-serif;
-  font-size: 1em;
-  margin-top:-20px;
-  margin-left: 30px;
-  color:$negro;
-}
+@media (max-width: 992px) {
+  body {
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+
+  .nav-menu-link:hover {
+    color: gold;
+    transition: 1s;
+  }
+  .logo-barra {
+    width: 15%;
+    height: 15%;
+  }
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    background-color: white !important;
+  }
+  h1.texto-barra {
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 2em;
+    margin-top: -20px;
+    margin-left: 30px;
+    padding-bottom: 5px;
+    color: $negro;
+  }
+
+  h2.subtexto-barra {
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 1em;
+    margin-top: -20px;
+    margin-left: 30px;
+    color: $negro;
+  }
 }
 
-  
 // .nav-link {
 //   text-decoration: none;
 //   color:$blanco !important;
 // }
 
+/* ESTILO ESLOGAN Y PROMOCION */
 
+.eslogan {
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  margin: 0 auto;
+  background-color: $negro;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  color: gold;
+  font-size: 1.68em;
+  width: 100%;
+}
 
+.eslogan:hover {
+  color: $blanco;
+  transition: 1, 5s;
+}
 
-  /* ESTILO ESLOGAN Y PROMOCION */
-  
+.descuento {
+  display: flex;
+  font-family: "Quicksand", sans-serif;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: $negro;
+  font-size: 2.18em;
+  position: relative;
+  top: 30px;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
 
-  .eslogan {
-    display:inline-block;
-    text-align: center;
-    padding: 5px;
-    margin:0 auto;
-    background-color: $negro;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    text-align: center;
-    color: gold;
-    font-size: 1.68em;
-    width: 100%;
-  } 
+/*HOVER */
 
-  .eslogan:hover {
-    color:$blanco;
-    transition: 1,5s;
-  }
-  
-  
-  .descuento {
-    display: flex;
-    font-family: 'Quicksand', sans-serif;
-    flex-direction: row;
-    flex-wrap: wrap;
-    color: $negro;
-    font-size: 2.18em;
-    position: relative;
-    top: 30px;
-    justify-content:center;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /*HOVER */
-  
-  h3.descuento:hover {
-    background-color: $gris;
-  }
-  
-  /* SLIDER */
-  .slider {
-    width: 1320px;
-    height: 560px;
-    margin: 0 auto;
-    margin-top: 50px;
-    overflow: hidden;
- ul {
+h3.descuento:hover {
+  background-color: $gris;
+}
+
+/* SLIDER */
+.slider {
+  width: 1320px;
+  height: 560px;
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: hidden;
+  ul {
     display: flex;
     padding: 0;
     width: 400%;
     animation: cambio 20s infinite alternate linear;
   }
-  
+
   li {
     width: 100%;
     list-style: none;
   }
-  
- img {
+
+  img {
     width: 100%;
   }
-  
+
   @keyframes cambio {
     0% {
       margin-left: 0;
@@ -194,21 +182,21 @@ h2.subtexto-barra {
     20% {
       margin-left: 0;
     }
-  
+
     25% {
       margin-left: -100%;
     }
     45% {
       margin-left: -100%;
     }
-  
+
     50% {
       margin-left: -200%;
     }
     70% {
       margin-left: -200%;
     }
-  
+
     75% {
       margin-left: -300%;
     }
@@ -217,433 +205,399 @@ h2.subtexto-barra {
     }
   }
 }
- /* PARTE PRINCIPAL DEL SITIO WEB */
-  
-  .parrafo {
-    text-align: center;
-    margin-top: 100px;
-    font-family: $Montserrat;
-    color:$gris;
-    font-size: 2.5em;
-  }
-  
-  .empresas {
-    display: flex;
-    justify-content: center;
-  }
+/* PARTE PRINCIPAL DEL SITIO WEB */
 
-  /* ICONOS NUESTROS PARTE SECUNDARIA */
+.parrafo {
+  text-align: center;
+  margin-top: 100px;
+  font-family: $Montserrat;
+  color: $gris;
+  font-size: 2.5em;
+}
 
-  .iconos {
-    img {
-      width: 4rem;
-      filter: invert(28%) sepia(100%) hue-rotate(-180deg) saturate(3);
-    }
-    padding: 4rem 0;
+.empresas {
+  display: flex;
+  justify-content: center;
+}
+
+/* ICONOS NUESTROS PARTE SECUNDARIA */
+
+.iconos {
+  img {
+    width: 4rem;
+    filter: invert(28%) sepia(100%) hue-rotate(-180deg) saturate(3);
+  }
+  padding: 4rem 0;
   .cols {
-      display: flex;
-      width: 100%;
-      height: auto;
-      flex-wrap:nowrap;
-      color:$gris;
-      text-align: center;
-      .col h3 {
-        font-weight: 600;
-        font-family: sans-serif;
-        .col p {
-          color: #444;
-          line-height: 1.5;
-          font-family: $Rubik;
-          }
-        }
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: nowrap;
+    color: $gris;
+    text-align: center;
+    .col h3 {
+      font-weight: 600;
+      font-family: sans-serif;
+      .col p {
+        color: #444;
+        line-height: 1.5;
+        font-family: $Rubik;
       }
     }
-  /* GALERIA DE FOTOS */
-  
-  
-  .galeria img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 3s;
-    animation: cambio infinite alternate;
-    }
-  
-  
-  .galeria input[type="radio"] {
-    position: relative;
-    bottom: calc(-300px - 1.5em);
-    left: 0.5em;
   }
-  
-  
-  
-  .galeria {
-
-    height: calc(300px + 3em);
-    width: 600px;
-    margin: 1em auto;
-    border: 2px solid rgb(5, 7, 143);
-    position: relative;
-    
-  input[type="radio"]:nth-of-type(1):checked ~ img:nth-of-type(1) { 
-  opacity: 1; }
-  input[type="radio"]:nth-of-type(2):checked ~ img:nth-of-type(2) { 
-  opacity: 1; }
-  input[type="radio"]:nth-of-type(3):checked ~ img:nth-of-type(3) { 
-    opacity: 1;}
-  input[type="radio"]:nth-of-type(4):checked ~ img:nth-of-type(4) { 
-    opacity: 1;}
-  input[type="radio"]:nth-of-type(5):checked ~ img:nth-of-type(5) { 
-    opacity: 1;}
-  input[type="radio"]:nth-of-type(6):checked ~ img:nth-of-type(6) { 
-    opacity: 1;}
-  input[type="radio"]:nth-of-type(7):checked ~ img:nth-of-type(7) { 
-    opacity: 1;}
 }
-  
-  /* QUIENES SOMOS  */
-  
-  .nosotros {
-    text-align: left;
-    margin-top: 60px;
-    font-family: "Montserrat", sans-serif, "Arial";
-    font-size: 1.56em;
-    line-height: 55px;
-  }
-  
-  /* PRODUCTOS */
+/* GALERIA DE FOTOS */
 
- #reduction {
-    width: 20% !important;
-    height: 10%;
+.carousel {
+  margin-top: 5%;
+}
 
-  }
-  
-  //  div#productos {
-  //       display: grid;
-  //       grid-template-rows: 1fr 1fr 1fr;
-  //       justify-items: center;
-  //       align-items: center;
-  //       grid-gap: 70px;
-  //       position: relative;
-  //       top:50px;
-  //     }
-  
-  // #camaras img {
-  //   margin:0 15px;
-  // }
-  
-  // #alarmas img {
-  //   margin:0 20px;
-  // }
-  
-  // #cerco {
-  //   margin:0 40px;
-  // }
-  
-  /* TITULO PRODUCTOS */
-  
-  h1.tituloProductos {
-    font-family: $Montserrat;
-    font-style: oblique;
-    font-size: 3.12em;
-    line-height: 55px;
-    text-decoration:$negro;
-    margin-top: 100px; 
-    text-decoration-line: underline;
-    text-align: center;
-  }
-  
-  /*NUESTROS KITS*/
-  
-  // div#kits {
-  //   display: grid;
-  //   grid-template-rows: 1fr 1fr 1fr;
-  //   justify-items: center;
-  //   align-items: center;
-  //   grid-gap: 70px;
-  //   position: relative;
-  //   top:50px;
-  // }
-
-  /* FORMULARIO DE CONTACTO */
-  
-
-    .formulario {
-        border: solid 5px;
-        color: blue;
-        border-radius: 30px;
-        font-family: Verdana,Geneva,Tahoma,sans-serif;
-        font-size: 1.5em;
-        position: relative;
-        top: 65px;
-        overflow: hidden;
-    }
-
-    .contact {
-      color: $gris;
-      font-family: $Rubik;
-      text-align: center;      
-    }
-  
-  
-  .forminterno {
-    display: flex;
-    justify-content: center;
-    font-family: "Montserrat", sans-serif, "Arial";
-  
-  }
-  .botonformulario {
-   display: flex;
-  justify-content: center;
+h2.textoGaleria {
+  color: $gris;
+  font-family: $Montserrat;
+  padding-top: 15px;
   text-align: center;
-  }
-  
-  
-  
-  .bottonForm {
-  color: mediumblue;
-  }
-  
-  
-  /* FORMAS DE PAGO */
-  
-  #formasDePago {
-    align-content: center;
-    display: grid;
-    grid-template-rows: 100px 100px;
-    grid-gap: 15px;
-    justify-content: space-around;
-    position: relative;
-    top:-150px;
-    }
-    
-    .grid-item1 {
-      grid-column-start: 1; 
-      grid-column-end: 4; 
-      grid-row-start: 1; 
-      grid-row-end: 3;
-      justify-items: center;
-    }
-  
-    .grid-item2 {
-      grid-column-start: 6; 
-      grid-column-end: 9; 
-      grid-row-start: 1; 
-      grid-row-end: 3;
-      justify-items: center;
-    }
-  .grid-item3 { 
-    grid-column-start: 11; 
-      grid-column-end: 14; 
-      grid-row-start: 1; 
-      grid-row-end: 3;
-      justify-items: center;
-  }
-  
-  .grid-item4 { 
-    grid-column-start: 16; 
-      grid-column-end: 19; 
-      grid-row-start: 1; 
-      grid-row-end: 3;
-      justify-items: center;
-  }
-  
-  .grid-item5 { 
-    grid-column-start: 21; 
-      grid-column-end: 24; 
-      grid-row-start: 1; 
-      grid-row-end: 3;
-      justify-items: center;
-  }
-  
-   
-  .titulo {
-    font-family: 'Dosis', sans-serif;
-    font-family: 'Noto Sans', sans-serif;
-    font-family: 'PT Sans', sans-serif;
-    font-family: 'Rubik', sans-serif;
-  }
+}
 
-  /*TRANSFERENCIAS*/
+/* QUIENES SOMOS  */
 
-  .transferencias 
-  {
-    font-family: $Montserrat;
-    font-size: 1.5em;
-    color:$gris;
-    text-align: center;
-    position: relative;
-    margin-top: -200px;
-    margin-bottom: 75px;
-  }
+.nosotros {
+  text-align: left;
+  margin-top: 60px;
+  font-family: "Montserrat", sans-serif, "Arial";
+  font-size: 1.56em;
+  line-height: 55px;
+}
+
+/* PRODUCTOS */
+
+#reduction {
+  width: 20% !important;
+  height: 10%;
+}
+
+//  div#productos {
+//       display: grid;
+//       grid-template-rows: 1fr 1fr 1fr;
+//       justify-items: center;
+//       align-items: center;
+//       grid-gap: 70px;
+//       position: relative;
+//       top:50px;
+//     }
+
+// #camaras img {
+//   margin:0 15px;
+// }
+
+// #alarmas img {
+//   margin:0 20px;
+// }
+
+// #cerco {
+//   margin:0 40px;
+// }
+
+/* TITULO PRODUCTOS */
+
+h1.tituloProductos {
+  font-family: $Montserrat;
+  font-style: oblique;
+  font-size: 3.12em;
+  line-height: 55px;
+  text-decoration: $negro;
+  margin-top: 100px;
+  text-decoration-line: underline;
+  text-align: center;
+}
+
+/*NUESTROS KITS*/
+
+// div#kits {
+//   display: grid;
+//   grid-template-rows: 1fr 1fr 1fr;
+//   justify-items: center;
+//   align-items: center;
+//   grid-gap: 70px;
+//   position: relative;
+//   top:50px;
+// }
+
+/* FORMULARIO DE CONTACTO */
+
+.formulario {
+  border: solid 3px;
+  color:gold;
+  border-radius: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  position: relative;
+  top: 65px;
+  overflow: hidden;
+}
+
+.texto-formulario {
+  padding:15px;
+  color:$gris;
+}
+
+.contact {
+  color: $gris;
+  font-family: $Rubik;
+  text-align: center;
+  padding: 15px;
+}
+
+.forminterno {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif, "Arial";
+}
 
 
-  /*BOTONES BANCO */
+.bottonForm {
+  background-color: gold;
+  border:gold;
+  color:$negro;
+}
 
-  .botones { 
-      display:flex;
-      flex-direction:row;
-      justify-content: center;
-      justify-content: space-around;
-      align-items: center;
+.bottonForm:hover {
+  background-color: $negro !important;
+}
+
+.boton-send {
+  display: flex;
+  margin:0 auto;
+  justify-content: center;
+  justify-items: center;
+  padding:15px;
+}
+
+/* FORMAS DE PAGO */
+
+#formasDePago {
+  align-content: center;
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-gap: 15px;
+  justify-content: space-around;
+  position: relative;
+  top: -150px;
+}
+
+.grid-item1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-items: center;
+}
+
+.grid-item2 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-items: center;
+}
+.grid-item3 {
+  grid-column-start: 11;
+  grid-column-end: 14;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-items: center;
+}
+
+.grid-item4 {
+  grid-column-start: 16;
+  grid-column-end: 19;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-items: center;
+}
+
+.grid-item5 {
+  grid-column-start: 21;
+  grid-column-end: 24;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-items: center;
+}
+
+.titulo {
+  font-family: "Dosis", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+/*TRANSFERENCIAS*/
+
+.transferencias {
+  font-family: $Montserrat;
+  font-size: 1.5em;
+  color: $gris;
+  text-align: center;
+  position: relative;
+  margin-top: -200px;
+  margin-bottom: 75px;
+}
+
+/*BOTONES BANCO */
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   .BancoUno {
     background-color: $rojo;
-      border:red;
-      
+    border: red;
   }
 
-  .BancoUno:hover
-  {
+  .BancoUno:hover {
     background-color: rgb(157, 172, 177);
     font-style: italic;
   }
   .BancoDos {
     background-color: $naranja;
-      text-align: center;
-      border:rgb(231, 110, 10);
+    text-align: center;
+    border: rgb(231, 110, 10);
   }
 
-  .BancoDos:hover
-  {
+  .BancoDos:hover {
     background-color: rgb(157, 172, 177);
     font-style: italic;
   }
 }
- 
 
-  
-  /* CONTACTANOS POR WHATSAPP */
-  
-  section h2 .whatsapp {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: "Dosis", sans-serif;
-    font-family: "Noto Sans", sans-serif;
-    font-family: "PT Sans", sans-serif;
-    font-family: "Rubik", sans-serif;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    background-color: limegreen;
-    font-size: 1.3em;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    margin-top:100px;
-  }
+/* CONTACTANOS POR WHATSAPP */
 
-  
-  
-  .lema {
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: center;
-    font-family: "Benne", serif;
-    font-style: italic;
-    font-size: 2.18em;
-    text-align: center;
-    margin-top:-210px;
-  }
+section h2 .whatsapp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Dosis", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: limegreen;
+  font-size: 1.3em;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  margin-top: 100px;
+}
 
-  /*ACCORDEON */
+.lema {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  font-family: "Benne", serif;
+  font-style: italic;
+  font-size: 2.18em;
+  text-align: center;
+  margin-top: -210px;
+}
 
-  .acordion-i {
-    position:relative;
-    margin-top: 50px;
-    font-family: $Montserrat;
-    color:$gris;
-  }
-  .textAccordion {
-    position: relative;
-    margin-top:50px;
-    text-decoration:underline;
-    font-family: $Montserrat;
-    color:$gris;
-  }
+/*ACCORDEON */
 
-  /* MAPA */
-  
-  .ubicacion {
-    display: block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2.18em;
-    position: relative;
-    margin-left:25px;
-    top: 70px;
-  }
-  
-  section div.mapa {
-    display: block;
-    border: solid;
-    top: -200px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .especificacionUbicacion {
-    display: block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 200;
-    font-style: italic;
-    font-size: 1.25em;
-    position: relative;
-    margin-left: 650px;
-    top: 180px;
-    line-height: 50px;
-   
-  }
-  
-  /*REDES SOCIALES */
-  
-  .sticky-container {
-    padding: 0px;
-    margin: 0px;
-    position: fixed;
-    right: -130px;
-    top: 230px;
-    width: 210px;
-    z-index: 1100;
-  }
-  .sticky li {
-    list-style-type: none;
-    background-color: #fff;
-    color: #efefef;
-    height: 43px;
-    padding: 0px;
-    margin: 0px 0px 1px 0px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-    cursor: pointer;
-  }
-  .sticky li:hover {
-    margin-left: -115px;
-  }
-  .sticky li img {
-    float: left;
-    margin: 5px 4px;
-    margin-right: 5px;
-  }
-  .sticky li p {
-    padding-top: 5px;
-    margin: 0px;
-    line-height: 16px;
-    font-size: 0.6em;
-  }
-  .sticky li p a {
-    text-decoration: none;
-    color: #2c3539;
-  }
-  .sticky li p a:hover {
-    text-decoration: underline;
-  }
-  
-  /* PIE DE PAGINA  */
-  
+.acordion-i {
+  position: relative;
+  margin-top: 50px;
+  font-family: $Montserrat;
+  color: $gris;
+}
+.textAccordion {
+  position: relative;
+  margin-top: 50px;
+  text-decoration: underline;
+  font-family: $Montserrat;
+  color: $gris;
+}
+
+/* MAPA */
+
+.ubicacion {
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.18em;
+  position: relative;
+  margin-left: 25px;
+  top: 70px;
+}
+
+section div.mapa {
+  display: block;
+  border: solid;
+  top: -200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.especificacionUbicacion {
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.25em;
+  position: relative;
+  margin-left: 650px;
+  top: 180px;
+  line-height: 50px;
+}
+
+/*REDES SOCIALES */
+
+.sticky-container {
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  right: -130px;
+  top: 230px;
+  width: 210px;
+  z-index: 1100;
+}
+.sticky li {
+  list-style-type: none;
+  background-color: #fff;
+  color: #efefef;
+  height: 43px;
+  padding: 0px;
+  margin: 0px 0px 1px 0px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.sticky li:hover {
+  margin-left: -115px;
+}
+.sticky li img {
+  float: left;
+  margin: 5px 4px;
+  margin-right: 5px;
+}
+.sticky li p {
+  padding-top: 5px;
+  margin: 0px;
+  line-height: 16px;
+  font-size: 0.6em;
+}
+.sticky li p a {
+  text-decoration: none;
+  color: #2c3539;
+}
+.sticky li p a:hover {
+  text-decoration: underline;
+}
+
+/* PIE DE PAGINA  */
+
 #scroll-top {
   background-color: gold;
   position: fixed;
@@ -656,55 +610,62 @@ h2.subtexto-barra {
   z-index: 100;
 }
 
-  .footer {
-    height: 400px;
-    margin: 0% auto;
-    width: 100%;
-    background-image: url(/img/imagenes/25708.png);
-    background-repeat: no-repeat;
-    position: relative;
-    top: 80px;
-    z-index: "0";
-  }
+.footer {
+  height: 400px;
+  margin: 0% auto;
+  width: 100%;
+  background-image: url(/img/imagenes/25708.png);
+  background-repeat: no-repeat;
+  position: relative;
+  top: 80px;
+  z-index: "0";
+}
 
-  .bg {
-    background-color: $negro;
-    // z-index: 150;
-    width: 1320px;
-    height: 110px;
+.bg {
+  background-color: $negro;
+  // z-index: 150;
+  width: 1320px;
+  height: 110px;
+}
 
-  }
+.direccion {
+  display: inline-block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+  position: relative;
+  left: 680px;
+  top: 300px;
+  text-align: center;
+}
 
-  .direccion {
-    display: inline-block;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.2em;
-    position: relative;
-    left: 680px;
-    top: 300px;
-    text-align: center;
-  }
-  
-  .horario {
-    display: flex;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2.3em;
-    position: relative;
-    left: 50px;
-    top: -50px;
-    color: #000000;
-  }
-  
-  .formasDePago:hover {
-    color: rgb(235, 143, 110);
-  }
-  
-  .copyright {
-    display: flex;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 1em;
-    justify-content: center;
-    margin-top:-32px;
-    color: $blanco;
-  }
-  
+.horario {
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.3em;
+  position: relative;
+  left: 50px;
+  top: -50px;
+  color: #000000;
+}
+
+.formasDePago:hover {
+  color: rgb(235, 143, 110);
+}
+
+.copyright {
+  display: flex;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1em;
+  justify-content: center;
+  margin-top: -32px;
+  color: $blanco;
+}
+
+.copyright-1 {
+  display: flex;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1em;
+  justify-content: center;
+  margin-top: -24px;
+  color: $blanco;
+}

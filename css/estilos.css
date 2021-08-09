@@ -4,9 +4,8 @@
 }
 
 body {
-  width: 100%;
-  max-width: 1320px;
-  min-width: 1320px;
+  width: 1320px;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -69,8 +68,9 @@ h2.subtexto-barra {
 }
 
 @media (max-width: 992px) {
-  .header {
-    margin-bottom: 60px;
+  body {
+    margin-left: 40px;
+    margin-top: 30px;
   }
 
   .nav-menu-link:hover {
@@ -234,48 +234,15 @@ h3.descuento:hover {
 }
 
 /* GALERIA DE FOTOS */
-.galeria img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 3s;
-  animation: cambio infinite alternate;
+.carousel {
+  margin-top: 5%;
 }
 
-.galeria input[type=radio] {
-  position: relative;
-  bottom: calc(-300px - 1.5em);
-  left: 0.5em;
-}
-
-.galeria {
-  height: calc(300px + 3em);
-  width: 600px;
-  margin: 1em auto;
-  border: 2px solid #05078f;
-  position: relative;
-}
-.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
-  opacity: 1;
-}
-.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
-  opacity: 1;
-}
-.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
-  opacity: 1;
-}
-.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
-  opacity: 1;
-}
-.galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
-  opacity: 1;
-}
-.galeria input[type=radio]:nth-of-type(6):checked ~ img:nth-of-type(6) {
-  opacity: 1;
-}
-.galeria input[type=radio]:nth-of-type(7):checked ~ img:nth-of-type(7) {
-  opacity: 1;
+h2.textoGaleria {
+  color: grey;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 15px;
+  text-align: center;
 }
 
 /* QUIENES SOMOS  */
@@ -308,8 +275,8 @@ h1.tituloProductos {
 /*NUESTROS KITS*/
 /* FORMULARIO DE CONTACTO */
 .formulario {
-  border: solid 5px;
-  color: blue;
+  border: solid 3px;
+  color: gold;
   border-radius: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5em;
@@ -318,10 +285,16 @@ h1.tituloProductos {
   overflow: hidden;
 }
 
+.texto-formulario {
+  padding: 15px;
+  color: grey;
+}
+
 .contact {
   color: grey;
   font-family: "Rubik" sans-serif;
   text-align: center;
+  padding: 15px;
 }
 
 .forminterno {
@@ -330,14 +303,22 @@ h1.tituloProductos {
   font-family: "Montserrat", sans-serif, "Arial";
 }
 
-.botonformulario {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.bottonForm {
+  background-color: gold;
+  border: gold;
+  color: black;
 }
 
-.bottonForm {
-  color: mediumblue;
+.bottonForm:hover {
+  background-color: black !important;
+}
+
+.boton-send {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  justify-items: center;
+  padding: 15px;
 }
 
 /* FORMAS DE PAGO */
@@ -622,5 +603,14 @@ section div.mapa {
   font-size: 1em;
   justify-content: center;
   margin-top: -32px;
+  color: white;
+}
+
+.copyright-1 {
+  display: flex;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1em;
+  justify-content: center;
+  margin-top: -24px;
   color: white;
 }/*# sourceMappingURL=estilos.css.map */

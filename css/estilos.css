@@ -255,24 +255,196 @@ h2.textoGaleria {
 }
 
 /* PRODUCTOS */
-#reduction {
-  width: 20% !important;
-  height: 10%;
+.container {
+  height: 100vh;
+  width: 100vw;
+  max-height: 800px;
+  max-width: 1280px;
+  min-height: 600px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
 }
 
-/* TITULO PRODUCTOS */
-h1.tituloProductos {
-  font-family: "Montserrat", sans-serif;
-  font-style: oblique;
-  font-size: 3.12em;
-  line-height: 55px;
-  text-decoration: black;
-  margin-top: 100px;
-  text-decoration-line: underline;
+.card {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card0 {
+  background: url("/img/imagenes/kitscam.png") center center no-repeat;
+  background-size: 300px;
+}
+
+.card0:hover {
+  background: url("/img/imagenes/kitscam.png") left center no-repeat;
+  background-size: 600px;
+}
+
+.card0:hover h2 {
+  opacity: 1;
+}
+
+.card0:hover .fa {
+  opacity: 1;
+}
+
+.card1 {
+  background: url("/img/imagenes/nuestrasalarmas.png") center center no-repeat;
+  background-size: 300px;
+}
+
+.card1:hover {
+  background: url("/img/imagenes/nuestrasalarmas.png") left center no-repeat;
+  background-size: 600px;
+}
+
+.card1:hover h2 {
+  opacity: 1;
+}
+
+.card1:hover .fa {
+  opacity: 1;
+}
+
+.card2 {
+  background: url("/img/imagenes/cercoelectrico.jpg") center center no-repeat;
+  background-size: 300px;
+}
+
+.card2:hover {
+  background: url("/img/imagenes/cercoelectrico.jpg") left center no-repeat;
+  background-size: 600px;
+}
+
+.card2:hover h2 {
+  opacity: 1;
+}
+
+.card2:hover .fa {
+  opacity: 1;
+}
+
+.fa {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.imgTransparente {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  border: none;
+}
+
+/* CAMARAS */
+.caja {
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.caja .card {
+  position: relative;
+  border-radius: 10px;
+}
+
+.caja .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.caja .card .face.face1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.caja .card:hover .face.face1 {
+  background: gold;
+  transform: translateY(0px);
+}
+
+.caja .card .face.face1 .content {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.caja.card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.caja.card .face.face1 .content i {
+  max-width: 100px;
+}
+
+.caja .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+
+.caja .card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.caja .card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
   text-align: center;
+  color: #414141;
 }
 
-/*NUESTROS KITS*/
+.caja .card .face.face2 .content h3 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  color: #414141;
+}
+
+.caja a {
+  text-decoration: none;
+  color: #414141;
+}
+
+.icon_img {
+  display: flex;
+  justify-content: center;
+}
+
+/* CERCO ELECTRICO */
+.links {
+  text-decoration: none;
+}
+
 /* FORMULARIO DE CONTACTO */
 .formulario {
   border: solid 3px;
@@ -497,7 +669,7 @@ section div.mapa {
   padding: 0px;
   margin: 0px;
   position: fixed;
-  right: -130px;
+  right: -138px;
   top: 230px;
   width: 210px;
   z-index: 1100;
@@ -518,7 +690,7 @@ section div.mapa {
 }
 
 .sticky li:hover {
-  margin-left: -115px;
+  margin-left: -90px;
 }
 
 .sticky li img {
